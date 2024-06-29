@@ -1,0 +1,22 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3c395c;
+  
+    padding: 1rem 2rem;
+  }
+
+  .navlinks {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  .navlinks li {
+    margin: 0 1rem;
+    cursor: pointer;
+    background-color: #fffffe;
+  }
