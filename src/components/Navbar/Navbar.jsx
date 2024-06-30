@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -14,20 +13,21 @@ const Navbar = () => {
         <h2>Sushree.</h2>
       </div>
       <ul className="navlinks">
-        <li className="links">
+        <li>
           <a href="#home">Home</a>
         </li>
-        <li className="links">
+        <li>
           <a href="#about">About</a>
         </li>
-        <li className="links">
+        <li>
           <a href="#projects">Projects</a>
         </li>
-        <li className="links">
+        <li>
           <a href="#connect">Connect</a>
         </li>
       </ul>
-      <div className="app__navbar-smallscreen">
+
+      <div className="smallscreen">
         <GiHamburgerMenu
           fontsize={27}
           color="#fff"
@@ -35,23 +35,23 @@ const Navbar = () => {
         />
 
         {toggleMenu && (
-          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
+          <div className="close-nav flex__center slide-bottom">
             <MdOutlineRestaurantMenu
               fontSize={27}
-              className="overlay__close"
+              className="close"
               onClick={() => setToggleMenu(false)}
             />
-            <ul className="app__navbar-smallscreen_links">
-              <li className="links">
+            <ul className="mobile-links">
+              <li>
                 <a href="#home">Home</a>
               </li>
-              <li className="links">
+              <li>
                 <a href="#about">About</a>
               </li>
-              <li className="links">
+              <li>
                 <a href="#projects">Projects</a>
               </li>
-              <li className="links">
+              <li>
                 <a href="#connect">Connect</a>
               </li>
             </ul>

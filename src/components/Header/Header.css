@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* General styles for the home_app container */
+.home_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0f0f0; /* Light gray background */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Styles for the info container */
+  .info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the main header text */
+  .h1 {
+    font-size: 2.5em;
+    color: #333; /* Dark gray text */
+    margin: 0;
+  }
+  
+  /* Styles for the tag line */
+  .tag {
+    font-size: 1.2em;
+    color: #666; /* Medium gray text */
+    margin-top: 10px;
+  }
+  
+  /* Styles for the image wrapper */
+  .app__wrapper_img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 768px) {
+    .home_app {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 40px;
+    }
+  
+    .info {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  
+    .h1 {
+      font-size: 3em;
+    }
+  
+    .tag {
+      font-size: 1.5em;
+    }
+  
+    .app__wrapper_img {
+      max-width: 400px;
+      margin-top: 0;
+    }
+  }
+  
